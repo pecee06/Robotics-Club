@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotics Club MANIT</title>
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/contactStyle.css" />
+  </head>
+  <body>
+    <div class="navbar grid align-c w-90 m-auto">
+      <div class="logo">
+        <img src="resources/logo.jpg" alt="" class="circular p-10" />
+      </div>
+      <div class="links">
+        <ul class="flex space-b px-10">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <form action="#" class="contact-form grid border-1 my-10 p-20 smooth">
+        <div class="self-align">
+            <label for="fname">First Name</label><br>
+            <input type="text" name="fname" id="fname" class="input-width" placeholder="Elon">
+        </div>
+        <div class="self-align">
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="lname" id="lname" class="input-width" placeholder="Musk">
+        </div>
+        <div class="self-align">
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" class="input-width" placeholder="51">
+        </div>
+        <div class="self-align">
+            <label for="sex-m">Male</label>
+            <input type="radio" name="sex" id="sex-m" class="mx-10" checked>
+
+            <label for="sex-f">Female</label>
+            <input type="radio" name="sex" id="sex-f" class="mx-10">
+
+            <label for="sex-o">Other</label>
+            <input type="radio" name="sex" id="sex-o" class="mx-10">
+        </div>
+        <div class="self-align">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" class="input-width" placeholder="abc@xyzmail.com">
+        </div>
+        <div class="self-align">
+            <label for="contact">Contact Number</label><br>
+            <input type="tel" name="contact" id="contact" class="input-width" placeholder="+1xxxxxxxxxx">
+        </div>
+        <div class="message-box m-auto">
+            <label for="msg">Write your message</label><br>
+            <textarea name="msg" id="msg" cols="50" rows="10" class="my-10 large"></textarea>
+        </div>
+        <div class="btn self-align">
+            <button type="submit" class="pointer p-10 large smooth">Submit</button>
+        </div>
+    </form>
+    <div class="footer grid bg-gray">
+        <div class="copyright m-auto">
+          <p class="bg-gray t-center">&copy; 2023</p>
+          <p class="bg-gray t-center">All Rights Reserved</p>
+        </div>
+        <div class="social self-align mt-50 mb-30">
+          <a href="https://www.instagram.com/roboticsclubmanit">
+            <img src="resources/instagram.svg" alt="" class="bg-gray" />
+          </a>
+        </div>
+        <div class="social self-align mt-50 mb-30">
+          <a href="https://www.linkedin.com/company/robotics-club-nit-bhopal/">
+            <img src="resources/linkedin.svg" alt="" class="bg-gray" />
+          </a>
+        </div>
+        <div class="social self-align mt-50 mb-30">
+          <a href="https://www.facebook.com/roboticsclubmanit">
+            <img src="resources/facebook.svg" alt="" class="bg-gray" />
+          </a>
+        </div>
+      </div>
+  </body>
+</html>

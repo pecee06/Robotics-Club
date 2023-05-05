@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* import statements should strictly be at the top */
+
+:root{
+    --blue: rgb(68, 137, 168);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.card{
+    box-shadow: -10px 0 100px -70px;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+}
+
+.card p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card:hover{
+    border: 1px solid var(--blue);
+}
+
+.container{
+    grid-template-rows: 0.5fr 2fr 2fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.copyright{
+    grid-column: span 3;
+}
+
+.copyright p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.details{
+    grid-column: span 2;
+    border-top: 1px solid brown;
+}
+
+.footer{
+    grid-column: span 2;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5vw;
+}
+
+.links a:hover{
+    color: brown;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.navbar{
+    grid-column: span 2;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 1px solid brown;
+}
+
+.social img{
+    width: 50px;
+}
+
+.title-left img{
+    width: 45vw;
+    box-shadow: -10px 20px 50px -30px;
+}
+
+.title-right p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+.title-right span{
+    font-family: 'Courgette', cursive;
+    font-size: 4.5vw;
+    color: brown;
+    display: block;
+}
+
+@media (max-width: 1118px){
+    .container{
+        grid-template-rows: 150px auto auto auto;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .navbar{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .links{
+        grid-column: span 2;
+    }
+    .title-left{
+        grid-column: span 2;
+    }
+    .title-right{
+        grid-column: span 2;
+        text-align: center;
+    }
+    .links a{
+        font-size: 3vw;
+    }
+    .logo{
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+
+@media (max-width: 755px){
+    .footer{
+        grid-template-rows: repeat(4,150px);
+        grid-template-columns: repeat(3,1fr);
+        width: 100vw;
+    }
+    .social,.copyright{
+        grid-column: span 3;
+    }
+}

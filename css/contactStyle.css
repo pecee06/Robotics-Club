@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik&family=Ubuntu&display=swap');
+
+:root{
+    --blue: rgb(68, 137, 168);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.btn{
+    grid-column: span 2;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn button{
+    outline: none;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+
+.btn button:hover{
+    background-color: black;
+}
+
+.contact-form{
+    grid-template-rows: repeat(3,1fr) 3fr;
+    grid-template-columns: repeat(2,1fr);
+    width: 60vw;
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3vw;
+}
+
+.copyright{
+    grid-column: span 3;
+}
+
+.copyright p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+form input{
+    margin: 30px 0;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 1.5vw;
+}
+
+.footer{
+    grid-column: span 2;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: repeat(3,1fr);
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--blue);
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5vw;
+}
+
+.links a:hover{
+    color: brown;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.message-box{
+    grid-column: span 2;
+}
+
+.navbar{
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 1px solid brown;
+}
+
+.social img{
+    width: 50px;
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+@media (max-width: 1118px){
+    .navbar{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .links{
+        grid-column: span 2;
+    }
+
+    .links a{
+        font-size: 3vw;
+    }
+    .logo{
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+
+@media (max-width: 990px){
+    .footer{
+        grid-template-rows: repeat(4,150px);
+        grid-template-columns: repeat(3,1fr);
+        width: 100vw;
+    }
+    .footer *{
+        background-color: rgb(238, 236, 236);
+    }
+    .social,.copyright{
+        grid-column: span 3;
+    }
+    textarea{
+        width: 50vw;
+        height: 200px;
+    }
+    .contact-form{
+        width: 99vw;
+        margin: 40px auto;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3vw;
+        grid-template-rows: repeat(6,1fr) 3fr;
+        grid-template-columns: auto;
+        border: none;
+    }
+    .contact-form div{
+        grid-column: span 2;
+    }
+
+    .contact-form input{
+        font-size: 3vw;
+    }
+}
